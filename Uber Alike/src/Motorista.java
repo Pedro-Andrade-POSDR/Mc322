@@ -15,5 +15,9 @@ public class Motorista extends Usuario {
 	protected void addVeiculo(Veiculo veic) {
 		veiculos.add(veic);
 	}
+	
+	protected Veiculo getVeiculo(int a) {
+		return veiculos.get(a - 1);
+	}
 
 }

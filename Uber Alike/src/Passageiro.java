@@ -6,5 +6,10 @@ public class Passageiro extends Usuario{
 		super(a,b,c);
 		cartao = d;
 	}
+	
+	public Viagem fazerViagem(Motorista motor, float distancia, int index) {
+		Viagem viagem = new Viagem(distancia, motor, index);
+		return viagem;
+	}
 
 }
