@@ -42,7 +42,7 @@ public class Viagem {
 		System.out.println();
 		System.out.printf("Distância do percurso: " + distancia + " Km");
 		
-		System.out.println("Houve " + paradas.size() + " paradas" );
+		System.out.println("Houve " + paradas.size() + " paradas");
 		
 	}
 	
