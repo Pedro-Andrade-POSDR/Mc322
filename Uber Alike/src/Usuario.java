@@ -9,5 +9,9 @@ public abstract class Usuario {
 		cpf = b;
 		nascimento = c;
 	}
+	
+	public void imprimirUser() {
+		System.out.printf(nome);
+	}
 
 }

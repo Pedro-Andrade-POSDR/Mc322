@@ -13,6 +13,7 @@ public class Viagem {
 		motorista = motor;
 		veiculo = motor.getVeiculo(a);
 		paradas = new ArrayList<Parada>();
+		passageiros = new ArrayList<Passageiro>();
 	}
 	
 	public void addPassageiro(Passageiro passageiro) {
@@ -26,8 +27,23 @@ public class Viagem {
 	
 	public void addParadas(Passageiro pass) {
 		Parada desc = new Parada(pass);
-		passageiros.add(pass);
+		addPassageiro(pass);
 		paradas.add(desc);
+	}
+	
+	public void Sumarry() {
+		System.out.printf("Passageiro(s):");
+		for (Passageiro i : passageiros){
+			i.imprimirUser();
+		}
+		System.out.println();
+		System.out.printf("Motorista: ");
+		motorista.imprimirUser();
+		System.out.println();
+		System.out.printf("Distância do percurso: " + distancia + " Km");
+		
+		System.out.println("Houve " + paradas.size() + " paradas" );
+		
 	}
 	
 	

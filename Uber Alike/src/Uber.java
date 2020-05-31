@@ -9,13 +9,19 @@ public class Uber {
 		Veiculo veic1 = new Veiculo("ABC-1234", 2009, true, mot1);
 		Veiculo veic2 = new Veiculo("OOP-2020", 2013, false, mot1);
 		
-		Viagem viagem1 = user1.fazerViagem(mot1, 2, 1);
+		Viagem viagem1 = user1.fazerViagem(mot1, 0.5f, 2);
+		viagem1.addParadas();
+		viagem1.addParadas();
 		
-		viagem1.addParadas();
-		viagem1.addParadas();
-		viagem1.addParadas(user2);
-		viagem1.addParadas();
-		viagem1.addParadas();
+		Viagem viagem2 = user1.fazerViagem(mot1, 2, 1);
+		
+		viagem2.addParadas();
+		viagem2.addParadas();
+		viagem2.addParadas(user2);
+		viagem2.addParadas();
+		viagem2.addParadas();
+		
+		Viagem viagem2 = user1.fazerViagem(mot1, 0.7f, 1);
 		
 		
 		
@@ -30,13 +36,7 @@ public class Uber {
 
 }
 
-//Crie os usu ́arios: Marcos, com CPF 145678798, e data de nascimento
-//15/07/1998, passageiro, n ́umero do cart ̃ao 369874. Maria, com CPF
-//248679108, e data de nascimento 12/02/1997, motorista, habilita ̧c ̃ao 987654,
-//n ́umero do cart ̃ao 483530, e possui dois carros, um de ano 2009 placa
-//ABC-1234 modelo luxo, e um ano 2013 placa OOP-2020 modelo comum.
-//Jo ̃ao, com CPF 654973652, e data de nascimento 03/01/2002, passageiro,
-//n ́umero do cart ̃ao 785632.
+
 //• Fa ̧ca uma viagem de Marcos com Maria, em seu carro de luxo, distˆancia
 //de 500 metros, com duas paradas.
 //• Fa ̧ca uma viagem de Marcos e Jo ̃ao com Maria, em seu carro comum,
