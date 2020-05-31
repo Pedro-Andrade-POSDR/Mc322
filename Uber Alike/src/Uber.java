@@ -21,7 +21,7 @@ public class Uber {
 		viagem2.addParadas();
 		viagem2.addParadas();
 		
-		Viagem viagem2 = user1.fazerViagem(mot1, 0.7f, 1);
+		Viagem viagem3 = user1.fazerViagem(mot1, 0.7f, 1);
 		
 		
 		

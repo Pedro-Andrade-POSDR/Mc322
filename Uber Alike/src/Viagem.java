@@ -44,6 +44,14 @@ public class Viagem {
 		
 		System.out.println("Houve " + paradas.size() + " paradas");
 		
+		int aux = 1;
+		for(Parada i : paradas) {
+			if(i.getPass() != null) {
+				System.out.printf("Houve descida na " + aux+ "ª parada de");
+				i.getPass().imprimirUser();
+			}
+		}
+		
 	}
 	
 	

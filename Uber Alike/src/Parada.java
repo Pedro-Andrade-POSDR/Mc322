@@ -9,5 +9,9 @@ public class Parada {
 	public Parada(Passageiro pass) {
 		descendo = pass;
 	}
+	
+	protected Passageiro getPass() {
+		return descendo;
+	}
 
 }
