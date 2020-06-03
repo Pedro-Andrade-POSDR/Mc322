@@ -13,6 +13,8 @@ public class Uber {
 		viagem1.addParadas();
 		viagem1.addParadas();
 		
+		viagem1.Sumarry();
+		
 		Viagem viagem2 = user1.fazerViagem(mot1, 2, 1);
 		
 		viagem2.addParadas();
@@ -21,16 +23,14 @@ public class Uber {
 		viagem2.addParadas();
 		viagem2.addParadas();
 		
+		viagem2.Sumarry();
+		
 		Viagem viagem3 = user1.fazerViagem(mot1, 0.7f, 1);
+		viagem3.addParadas();
+		viagem3.addParadas();
+		viagem3.addParadas();
 		
-		
-		
-		
-		
-		
-		
-		
-		
+		viagem3.Sumarry();
 	}
 	
 

@@ -9,6 +9,7 @@ public class Passageiro extends Usuario{
 	
 	public Viagem fazerViagem(Motorista motor, float distancia, int index) {
 		Viagem viagem = new Viagem(distancia, motor, index);
+		viagem.addPassageiro(this);
 		return viagem;
 	}
 

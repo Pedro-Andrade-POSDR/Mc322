@@ -11,7 +11,7 @@ public abstract class Usuario {
 	}
 	
 	public void imprimirUser() {
-		System.out.printf(nome);
+		System.out.printf(nome + " ");
 	}
 
 }

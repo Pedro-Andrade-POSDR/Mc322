@@ -32,7 +32,7 @@ public class Viagem {
 	}
 	
 	public void Sumarry() {
-		System.out.printf("Passageiro(s):");
+		System.out.printf("Passageiro(s): ");
 		for (Passageiro i : passageiros){
 			i.imprimirUser();
 		}
@@ -40,16 +40,18 @@ public class Viagem {
 		System.out.printf("Motorista: ");
 		motorista.imprimirUser();
 		System.out.println();
-		System.out.printf("Distância do percurso: " + distancia + " Km");
+		System.out.println("Distância do percurso: " + distancia + "Km");
 		
 		System.out.println("Houve " + paradas.size() + " paradas");
 		
 		int aux = 1;
 		for(Parada i : paradas) {
 			if(i.getPass() != null) {
-				System.out.printf("Houve descida na " + aux+ "ª parada de");
+				System.out.printf("Houve descida na " + aux+ "ª parada de ");
 				i.getPass().imprimirUser();
+				System.out.println();
 			}
+			aux += 1;
 		}
 		
 	}
