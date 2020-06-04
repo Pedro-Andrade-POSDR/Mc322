@@ -1,3 +1,4 @@
+package lab10;
 
 public abstract class Usuario {
 	private String nome;
@@ -8,6 +9,10 @@ public abstract class Usuario {
 		nome = a;
 		cpf = b;
 		nascimento = c;
+	}
+	
+	public String getNome() {
+		return nome;
 	}
 	
 	public void imprimirUser() {

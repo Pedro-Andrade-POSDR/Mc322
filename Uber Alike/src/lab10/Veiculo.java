@@ -1,3 +1,4 @@
+package lab10;
 
 public class Veiculo {
 	private String placa;
@@ -12,6 +13,19 @@ public class Veiculo {
 		luxo = lux;
 		motorista = motor;
 		motor.addVeiculo(this);
+	}
+	
+	protected boolean getLuxo() {
+		return luxo;
+	}
+	
+	protected void imprimirDados() {
+		System.out.println("Placa:" + placa);
+		System.out.println("Ano:" + ano);
+		if (luxo)
+			System.out.println("Modelo luxo");
+		else
+			System.out.println("Modelo Comum");
 	}
 	
 
