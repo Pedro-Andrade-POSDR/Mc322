@@ -24,6 +24,10 @@ public class User {
 		this.playlists = new ArrayList<Playlist>();
 	}
 	
+	protected String getNome() {
+		return nome;
+	}
+	
 	protected void changeAssinatura() {
 		if (assinante == true ) {
 			assinante = false;
@@ -60,6 +64,12 @@ public class User {
 		return playlists;
 	}
 	
+	
+	
+	protected void tocarPlaylist(int indice) {
+		acessarPlaylist(indice).play();
+	}
+	
 	protected void imprimirPlaylists() {
 		int aux = 1;
 		for (Playlist atual : playlists) {
@@ -70,7 +80,7 @@ public class User {
 		System.out.println();
 	}
 	
-	protected Playlist acessarPlaylist(int indice) {
+	private Playlist acessarPlaylist(int indice) {
 		return getPlaylist().get(indice - 1);
 	}
 	
