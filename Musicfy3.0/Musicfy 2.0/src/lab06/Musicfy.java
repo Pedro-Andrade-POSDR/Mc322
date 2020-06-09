@@ -20,4 +20,6 @@ public class Musicfy {
 		System.out.println("[4] Ir para informações do perfil");
 	}
 	
+	private void tocarAleatorio()
+	
 }
